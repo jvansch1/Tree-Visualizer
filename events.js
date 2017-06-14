@@ -5,7 +5,9 @@ function jqueryEvents() {
 
     $('#add-node-button').on('click', (e) => {
       ctx.fillStyle = 'green';
-      ctx.fillRect(300,50,50,50)
+      ctx.beginPath();
+      ctx.arc(200,50, 20, 0, Math.PI * 2, true);
+      ctx.fill();
     })
 
 
