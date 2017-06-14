@@ -17,10 +17,14 @@ function jqueryEvents() {
       $('body').data('tree', tree)
       $('body').data('root', root)
 
-      // ctx.fillStyle = 'green';
-      // ctx.beginPath();
-      // ctx.arc(200,50, 20, 0, Math.PI * 2, true);
-      // ctx.fill();
+      ctx.fillStyle = 'green';
+      ctx.beginPath();
+      ctx.arc(200,50, 20, 0, Math.PI * 2, true);
+      ctx.fill();
+
+      ctx.font = '20px serif';
+      ctx.fillStyle = 'black';
+      ctx.fillText(newNodeValue, 200, 50);
     })
 
 
