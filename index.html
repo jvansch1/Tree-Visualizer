@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <script src="main.js" charset="utf-8"></script>
     <script src="events.js" charset="utf-8"></script>
+    <script src="TreeNode.js" charset="utf-8"></script>
+    <script src="BinaryTree.js" charset="utf-8"></script>
     <link rel="stylesheet" href="stylesheets/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Trees</title>
@@ -12,6 +14,17 @@
     <canvas id='main'>
     </canvas>
     <script>
+
+    let root;
+    let tree
+
+      document.addEventListener("DOMContentLoaded", () => {
+        root = new Node(1);
+        tree = new BinaryTree
+        $('body').data('root', root)
+        $('body').data('tree', tree)
+      })
+
       main();
       jqueryEvents();
     </script>

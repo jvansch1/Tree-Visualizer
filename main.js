@@ -2,6 +2,7 @@ function main() {
   document.addEventListener("DOMContentLoaded", () => {
     let canvas = document.getElementById("main")
     let ctx = canvas.getContext('2d')
+    let tree = $('body').data('tree');
 
     canvas.height = document.body.clientHeight;
     canvas.width = document.body.clientWidth;
